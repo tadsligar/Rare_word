@@ -1,0 +1,5 @@
+.DS_Store
+.claude/
+genetic_ai_tokenization_project/
+__pycache__/
+*.pyc

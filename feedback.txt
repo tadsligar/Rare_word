@@ -1,0 +1,3 @@
+Make sure to have a proper discussion of relevant prior work.
+
+Also, make sure to have a thorough evaluation since the code is similar to what we have already discussed in class in demos or assignments. 
