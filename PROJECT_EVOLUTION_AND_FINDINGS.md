@@ -132,10 +132,12 @@ All four configurations use WikiText-2, 20 epochs, identical 4-layer BERT MLM ar
 
 | Config | Usable Examples | Top-1 | Top-10 | Top-100 |
 |---|---|---|---|---|
-| A: 18K/256 | 500 | 0.0% | 0.0% | 0.0% |
+| A: 18K/256 | 500* | 0.0% | 0.0% | 0.0% |
 | B: 8K/256 | 0 | N/A | N/A | N/A |
 | C: 18K/512 | **166** | **3.0%** | **7.2%** | **21.7%** |
 | D: 8K/512 | 0 | N/A | N/A | N/A |
+
+*\*Config A used an earlier evaluation pipeline that pre-filtered candidates to words in the word tokenizer's vocabulary, inflating the usable count to 500. Configs B–D use the corrected pipeline where each tokenizer independently determines coverage. Config C's 166 reflects the true number of rare words (freq 1–9) that exist in the 18K word vocabulary.*
 
 **Results — SentencePiece Validation Loss:**
 
