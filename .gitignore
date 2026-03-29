@@ -3,3 +3,5 @@
 genetic_ai_tokenization_project/
 __pycache__/
 *.pyc
+results_wikitext2/
+results_wikitext103/
